@@ -1,0 +1,146 @@
+{
+  "rows": 120,
+  "duplicates_removed": 0,
+  "missing_numeric_values": 0,
+  "total_revenue": 2086436.2000000002,
+  "average_revenue": 17386.968333333334,
+  "train_rows": 96,
+  "test_rows": 24,
+  "seed": 42,
+  "metrics": {
+    "mae": 492.16796723516853,
+    "rmse": 599.0858537873512,
+    "r2": 0.9913584999232784,
+    "baseline_mae": 5650.590520833332
+  },
+  "regions": [
+    {
+      "region": "Central",
+      "sum": 694939.78,
+      "mean": 17373.4945,
+      "count": 40
+    },
+    {
+      "region": "North",
+      "sum": 690560.05,
+      "mean": 17264.00125,
+      "count": 40
+    },
+    {
+      "region": "South",
+      "sum": 700936.37,
+      "mean": 17523.40925,
+      "count": 40
+    }
+  ],
+  "categories": {
+    "region": [
+      "Central",
+      "North",
+      "South"
+    ],
+    "channel": [
+      "Online",
+      "Retail"
+    ]
+  },
+  "holdout": [
+    {
+      "actual": 13114.09,
+      "predicted": 13294.313847207532
+    },
+    {
+      "actual": 7403.41,
+      "predicted": 6475.933771330561
+    },
+    {
+      "actual": 23986.72,
+      "predicted": 24556.484495444874
+    },
+    {
+      "actual": 10608.6,
+      "predicted": 10362.363189664335
+    },
+    {
+      "actual": 22255.62,
+      "predicted": 23169.793554911514
+    },
+    {
+      "actual": 19129.32,
+      "predicted": 19457.010917066145
+    },
+    {
+      "actual": 11718.39,
+      "predicted": 13016.818730447314
+    },
+    {
+      "actual": 18704.89,
+      "predicted": 17726.552747381167
+    },
+    {
+      "actual": 25110.44,
+      "predicted": 25020.80796408558
+    },
+    {
+      "actual": 12738.95,
+      "predicted": 12578.136384595888
+    },
+    {
+      "actual": 23938.86,
+      "predicted": 23653.433030845477
+    },
+    {
+      "actual": 20267.85,
+      "predicted": 20103.56669505666
+    },
+    {
+      "actual": 9558.79,
+      "predicted": 8819.365755383282
+    },
+    {
+      "actual": 25908.07,
+      "predicted": 25698.748514866682
+    },
+    {
+      "actual": 16395.48,
+      "predicted": 16868.421465888303
+    },
+    {
+      "actual": 24453.57,
+      "predicted": 23661.261593067717
+    },
+    {
+      "actual": 6902.27,
+      "predicted": 7595.875606904196
+    },
+    {
+      "actual": 5760.94,
+      "predicted": 5870.11852952882
+    },
+    {
+      "actual": 18400.72,
+      "predicted": 18779.531631368856
+    },
+    {
+      "actual": 21570.25,
+      "predicted": 20680.022113932588
+    },
+    {
+      "actual": 7056.75,
+      "predicted": 6401.05279005555
+    },
+    {
+      "actual": 19508.11,
+      "predicted": 19309.259867479443
+    },
+    {
+      "actual": 22644.66,
+      "predicted": 22128.346716106636
+    },
+    {
+      "actual": 20925.03,
+      "predicted": 20912.166431271944
+    }
+  ],
+  "source": "synthetic demo data"
+}

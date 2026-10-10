@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sales Insight Dashboard | Revenue Analysis</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script src="{{ url_for('static', filename='app.js') }}" defer></script>
+</head>
+<body>
+<main>
+  <header><p class="eyebrow">DATA → INSIGHT → ESTIMATE</p><h1>Sales Insight</h1>
+    <p>Explore sales by region and estimate revenue from marketing spend and visits.</p></header>
+  <section class="panel">
+    <h2>Start with a dataset</h2>
+    <p>Try the synthetic sample, or upload 30–5,000 rows of your own sales records.</p>
+    <p class="hint">CSV columns: marketing_spend, visits, region, channel, revenue. All amounts use the same currency.</p>
+    <div class="actions"><button id="demo">Explore sample data</button>
+      <form id="upload"><label for="csv">Sales CSV</label><input id="csv" type="file" accept=".csv" required>
+      <button type="submit" class="secondary">Analyze CSV</button></form></div>
+    <p id="message" role="status" aria-live="polite">Choose a dataset to begin.</p>
+  </section>
+  <div id="results" hidden>
+    <div class="stats"><article><span>Records</span><strong id="rows"></strong></article>
+      <article><span>Total revenue</span><strong id="total"></strong></article>
+      <article><span>Average revenue</span><strong id="average"></strong></article></div>
+    <div class="grid"><section class="panel"><h2>Revenue by region</h2><div id="regions"></div></section>
+      <section class="panel"><h2>How well does the model predict?</h2><dl id="metrics"></dl>
+        <p class="hint">Measured on a held-out 20% split. Lower MAE is better; the baseline always predicts the training average.</p></section></div>
+    <section class="panel"><h2>Estimate a new scenario</h2>
+      <form id="predict" class="prediction">
+        <label>Marketing spend<input name="marketing_spend" type="number" min="0" max="1000000000" step="any" value="1000" required></label>
+        <label>Visits<input name="visits" type="number" min="0" max="1000000000" step="any" value="500" required></label>
+        <label>Region<select name="region" id="region"></select></label>
+        <label>Channel<select name="channel" id="channel"></select></label>
+        <button type="submit">Estimate revenue</button>
+      </form><p id="estimate" role="status" aria-live="polite"></p>
+      <p class="hint">An illustrative estimate, not a guaranteed outcome. Predictions outside the observed range may be unreliable.</p>
+      <button id="download" class="secondary">Download analysis JSON</button>
+    </section>
+  </div>
+  <footer>Portfolio demo · Python, Flask, Pandas & scikit-learn · One shared dataset per server process</footer>
+</main>
+</body></html>
