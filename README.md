@@ -1,5 +1,7 @@
 # Sales Insight Dashboard
 
+[คู่มือภาษาไทย: เรียนตั้งแต่ศูนย์ พร้อม What/Why/How และขั้นตอนลงมือทำ](docs/GUIDE_TH.md)
+
 A local web application that turns sales CSV records into regional revenue summaries, a regression evaluation, and interactive revenue estimates. The full flow is CSV ingestion → validation/deduplication → preprocessing → training → report → prediction API/dashboard.
 
 ## Project preview
