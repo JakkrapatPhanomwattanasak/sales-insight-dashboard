@@ -2,6 +2,14 @@
 
 A local web application that turns sales CSV records into regional revenue summaries, a regression evaluation, and interactive revenue estimates. The full flow is CSV ingestion → validation/deduplication → preprocessing → training → report → prediction API/dashboard.
 
+## Project preview
+
+[Open the public interactive demo](https://jakkrapat-project-lab.happy-bud-2264.chatgpt.site/#sales)
+
+![Sales Insight Dashboard running in Flask with the synthetic dataset](docs/images/dashboard.png)
+
+The public preview computes revenue estimates in the browser using exported parameters from the fitted Python Ridge model. The full Python app supports CSV upload, preprocessing, training, and analysis reports.
+
 ## Run locally
 
 Python 3.11+ (PowerShell):
